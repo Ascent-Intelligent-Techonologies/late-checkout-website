@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Late Checkout — Hyderabad</title>
+  <meta name="description" content="Late Checkout is Hyderabad's premier event marketing collective — curating unforgettable nights, rooftop gatherings, and cultural experiences across the city." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+        <rect x="2" y="2" width="216" height="76" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <line x1="2" y1="20" x2="52" y2="20" stroke="currentColor" stroke-width="2.5"/>
+        <line x1="168" y1="20" x2="218" y2="20" stroke="currentColor" stroke-width="2.5"/>
+        <text x="110" y="34" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="currentColor" text-anchor="middle">Late</text>
+        <text x="110" y="62" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="currentColor" text-anchor="middle">Checkout</text>
+      </svg>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--outline nav__cta">Get in Touch</a>
+    <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__grain"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Hyderabad's Premier Event Collective</p>
+      <h1 class="hero__title">
+        Where the Night<br/>
+        <em>Begins Late</em>
+      </h1>
+      <p class="hero__sub">Rooftop soirées. Cultural nights. Exclusive gatherings.<br/>We craft experiences that linger long after last call.</p>
+      <div class="hero__actions">
+        <a href="#events" class="btn btn--primary">View Events</a>
+        <a href="https://www.instagram.com/latecheckout.hyd/" target="_blank" class="btn btn--ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Follow Us
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__num">50+</span>
+        <span class="stat__label">Events Hosted</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num">10K+</span>
+        <span class="stat__label">Happy Guests</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num">3+</span>
+        <span class="stat__label">Years Running</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__img-wrap">
+            <img src="images/about-main.jpg" alt="Late Checkout event atmosphere" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="img-placeholder" style="display:none">
+              <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="500" fill="#1a0408"/>
+                <circle cx="200" cy="200" r="120" fill="none" stroke="#6B0F1A" stroke-width="1" opacity="0.4"/>
+                <circle cx="200" cy="200" r="80" fill="none" stroke="#6B0F1A" stroke-width="1" opacity="0.3"/>
+                <text x="200" y="340" font-family="Georgia,serif" font-size="16" fill="#6B0F1A" text-anchor="middle" opacity="0.8">Late Checkout</text>
+                <text x="200" y="365" font-family="Georgia,serif" font-size="11" fill="#9a3030" text-anchor="middle" opacity="0.6">Hyderabad</text>
+                <!-- Silhouette crowd -->
+                <ellipse cx="60" cy="480" rx="30" ry="60" fill="#6B0F1A" opacity="0.5"/>
+                <ellipse cx="120" cy="460" rx="28" ry="70" fill="#6B0F1A" opacity="0.4"/>
+                <ellipse cx="180" cy="475" rx="32" ry="55" fill="#6B0F1A" opacity="0.5"/>
+                <ellipse cx="240" cy="465" rx="28" ry="65" fill="#6B0F1A" opacity="0.45"/>
+                <ellipse cx="300" cy="472" rx="30" ry="58" fill="#6B0F1A" opacity="0.5"/>
+                <ellipse cx="360" cy="460" rx="28" ry="68" fill="#6B0F1A" opacity="0.4"/>
+                <!-- Stars -->
+                <circle cx="50" cy="30" r="1" fill="#fff" opacity="0.6"/>
+                <circle cx="150" cy="60" r="1.5" fill="#fff" opacity="0.5"/>
+                <circle cx="280" cy="20" r="1" fill="#fff" opacity="0.7"/>
+                <circle cx="350" cy="80" r="1" fill="#fff" opacity="0.4"/>
+                <circle cx="100" cy="100" r="1" fill="#fff" opacity="0.5"/>
+                <circle cx="320" cy="140" r="1.5" fill="#fff" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-text">Est. 2022</span>
+            <span class="about__badge-sub">Hyderabad</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section__eyebrow">Our Story</p>
+          <h2 class="section__title">Crafting Hyderabad's<br/><em>Most Memorable Nights</em></h2>
+          <p class="about__para">Late Checkout was born from a simple belief — the best moments happen after midnight. We're a Hyderabad-based event marketing collective dedicated to creating immersive, intimate, and unforgettable experiences for those who live life after hours.</p>
+          <p class="about__para">From intimate rooftop gatherings to large-scale cultural nights, we bring together the city's creatives, professionals, and night owls for evenings that transcend the ordinary.</p>
+          <div class="about__pillars">
+            <div class="pillar">
+              <div class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <h4>Curated Experiences</h4>
+                <p>Every event is designed with intention — from the playlist to the lighting.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div>
+                <h4>Community First</h4>
+                <p>Building a tribe of like-minded souls who appreciate the finer things.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h4>Premium Quality</h4>
+                <p>Handpicked venues, premium partners, and zero compromise on experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events section" id="events">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">What We Do</p>
+        <h2 class="section__title">Past <em>Events</em></h2>
+        <p class="section__sub">A glimpse into the nights we've created across Hyderabad.</p>
+      </div>
+      <div class="events__grid">
+
+        <article class="event-card event-card--featured">
+          <div class="event-card__img">
+            <img src="images/event-rooftop.jpg" alt="Rooftop Rendezvous" loading="lazy" onerror="this.style.display='none'" />
+            <div class="event-card__img-bg" style="background: linear-gradient(135deg, #1a0408 0%, #3d0912 100%)">
+              <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <rect width="600" height="400" fill="#0d0204"/>
+                <rect x="0" y="300" width="600" height="100" fill="#1a0408"/>
+                <!-- City skyline -->
+                <rect x="20" y="240" width="40" height="60" fill="#200508" opacity="0.8"/>
+                <rect x="70" y="200" width="30" height="100" fill="#200508" opacity="0.9"/>
+                <rect x="110" y="220" width="50" height="80" fill="#200508" opacity="0.8"/>
+                <rect x="170" y="180" width="35" height="120" fill="#200508" opacity="0.85"/>
+                <rect x="215" y="210" width="45" height="90" fill="#200508" opacity="0.8"/>
+                <rect x="270" y="170" width="40" height="130" fill="#200508" opacity="0.9"/>
+                <rect x="320" y="195" width="30" height="105" fill="#200508" opacity="0.8"/>
+                <rect x="360" y="215" width="55" height="85" fill="#200508" opacity="0.85"/>
+                <rect x="425" y="190" width="35" height="110" fill="#200508" opacity="0.8"/>
+                <rect x="470" y="230" width="50" height="70" fill="#200508" opacity="0.9"/>
+                <rect x="530" y="200" width="40" height="100" fill="#200508" opacity="0.8"/>
+                <!-- Moon -->
+                <circle cx="500" cy="70" r="35" fill="#3d0912" opacity="0.6"/>
+                <circle cx="515" cy="60" r="30" fill="#0d0204"/>
+                <!-- Stars -->
+                <circle cx="50" cy="40" r="1.5" fill="#fff" opacity="0.7"/>
+                <circle cx="150" cy="80" r="1" fill="#fff" opacity="0.5"/>
+                <circle cx="250" cy="30" r="2" fill="#fff" opacity="0.6"/>
+                <circle cx="350" cy="60" r="1" fill="#fff" opacity="0.8"/>
+                <circle cx="100" cy="120" r="1.5" fill="#fff" opacity="0.4"/>
+                <circle cx="420" cy="90" r="1" fill="#fff" opacity="0.6"/>
+                <!-- Glow -->
+                <ellipse cx="300" cy="290" rx="200" ry="50" fill="#6B0F1A" opacity="0.15"/>
+                <text x="300" y="340" font-family="Georgia,serif" font-size="28" fill="#6B0F1A" text-anchor="middle" opacity="0.3">✦</text>
+              </svg>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="event-card__tag">Rooftop</span>
+            <h3 class="event-card__title">Rooftop Rendezvous</h3>
+            <p class="event-card__desc">An intimate evening under the stars at one of Hyderabad's most stunning rooftop venues. Live music, craft cocktails, and the city skyline as our backdrop.</p>
+            <div class="event-card__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2024
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                200+ Guests
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__img">
+            <div class="event-card__img-bg" style="background: linear-gradient(135deg, #0d0a02 0%, #2d2010 100%)">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <rect width="400" height="300" fill="#0d0a02"/>
+                <circle cx="200" cy="130" r="80" fill="none" stroke="#c4881a" stroke-width="1" opacity="0.2"/>
+                <circle cx="200" cy="130" r="55" fill="none" stroke="#c4881a" stroke-width="1" opacity="0.15"/>
+                <text x="200" y="135" font-family="Georgia,serif" font-size="48" fill="#c4881a" text-anchor="middle" opacity="0.4">♪</text>
+                <rect x="0" y="240" width="400" height="60" fill="#1a1408" opacity="0.8"/>
+                <ellipse cx="200" cy="240" rx="150" ry="30" fill="#c4881a" opacity="0.08"/>
+              </svg>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="event-card__tag">Music</span>
+            <h3 class="event-card__title">After Hours Sessions</h3>
+            <p class="event-card__desc">A night dedicated to underground sounds. Curated DJ sets blending house, lo-fi, and Indie in a carefully selected private venue.</p>
+            <div class="event-card__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2024
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                150+ Guests
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__img">
+            <div class="event-card__img-bg" style="background: linear-gradient(135deg, #020d12 0%, #0a2d35 100%)">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <rect width="400" height="300" fill="#020d12"/>
+                <circle cx="200" cy="120" r="70" fill="none" stroke="#1a8a9a" stroke-width="1" opacity="0.25"/>
+                <text x="200" y="130" font-family="Georgia,serif" font-size="52" fill="#1a8a9a" text-anchor="middle" opacity="0.35">✦</text>
+                <line x1="0" y1="200" x2="400" y2="200" stroke="#1a8a9a" stroke-width="0.5" opacity="0.2"/>
+                <ellipse cx="200" cy="260" rx="180" ry="25" fill="#1a8a9a" opacity="0.06"/>
+              </svg>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="event-card__tag">Cultural</span>
+            <h3 class="event-card__title">The Midnight Market</h3>
+            <p class="event-card__desc">Hyderabad's most unique night market — artisan vendors, street food reimagined, live performances, and a community that comes alive after dark.</p>
+            <div class="event-card__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                500+ Guests
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__img">
+            <div class="event-card__img-bg" style="background: linear-gradient(135deg, #0d0208 0%, #2d0a1a 100%)">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <rect width="400" height="300" fill="#0d0208"/>
+                <rect x="100" y="60" width="200" height="140" rx="8" fill="none" stroke="#9a1a4a" stroke-width="1" opacity="0.3"/>
+                <text x="200" y="145" font-family="Georgia,serif" font-size="52" fill="#9a1a4a" text-anchor="middle" opacity="0.4">♛</text>
+                <ellipse cx="200" cy="250" rx="160" ry="20" fill="#9a1a4a" opacity="0.08"/>
+              </svg>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="event-card__tag">Exclusive</span>
+            <h3 class="event-card__title">Velvet Lounge Night</h3>
+            <p class="event-card__desc">By-invitation only. An evening of old-school glamour meets modern luxury in an undisclosed Hyderabad location. Formal dress code. No cameras.</p>
+            <div class="event-card__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                80 Guests
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__img">
+            <div class="event-card__img-bg" style="background: linear-gradient(135deg, #080d02 0%, #1a2d08 100%)">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <rect width="400" height="300" fill="#080d02"/>
+                <circle cx="200" cy="120" r="65" fill="none" stroke="#4a8a1a" stroke-width="1" opacity="0.25"/>
+                <text x="200" y="133" font-family="Georgia,serif" font-size="56" fill="#4a8a1a" text-anchor="middle" opacity="0.35">✿</text>
+                <ellipse cx="200" cy="255" rx="170" ry="22" fill="#4a8a1a" opacity="0.07"/>
+              </svg>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <span class="event-card__tag">Outdoor</span>
+            <h3 class="event-card__title">Garden Soirée</h3>
+            <p class="event-card__desc">Fairy lights, botanical décor, and acoustic performances across a lush private garden. An evening that felt like a dream.</p>
+            <div class="event-card__meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                120+ Guests
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card event-card--cta">
+          <div class="event-card__cta-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="48" height="48"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+            <h3>More Events<br/>Coming Soon</h3>
+            <p>Follow us on Instagram to be the first to know.</p>
+            <a href="https://www.instagram.com/latecheckout.hyd/" target="_blank" class="btn btn--outline">@latecheckout.hyd</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Moments Captured</p>
+        <h2 class="section__title">The <em>Gallery</em></h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#1a0408,#3d0912)">
+          <svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="300" height="450" fill="#120206"/><circle cx="150" cy="200" r="100" fill="none" stroke="#6B0F1A" stroke-width="1" opacity="0.3"/><ellipse cx="150" cy="380" rx="120" ry="20" fill="#6B0F1A" opacity="0.1"/><text x="150" y="210" font-size="60" fill="#6B0F1A" text-anchor="middle" opacity="0.4" font-family="serif">✦</text></svg>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#0d0a02,#2d2010)">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="300" height="300" fill="#0a0801"/><text x="150" y="160" font-size="60" fill="#c4881a" text-anchor="middle" opacity="0.35" font-family="serif">♪</text></svg>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#02080d,#0a2030)">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="300" height="300" fill="#010608"/><circle cx="150" cy="130" r="70" fill="none" stroke="#1a6a8a" stroke-width="1" opacity="0.25"/><text x="150" y="142" font-size="48" fill="#1a6a8a" text-anchor="middle" opacity="0.4" font-family="serif">✧</text></svg>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#0d0208,#2d081a)">
+          <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="600" height="300" fill="#090105"/><ellipse cx="300" cy="200" rx="250" ry="60" fill="#9a1a4a" opacity="0.08"/><text x="300" y="165" font-size="56" fill="#9a1a4a" text-anchor="middle" opacity="0.35" font-family="serif">♛</text></svg>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#080d02,#1a2d08)">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="300" height="300" fill="#060a01"/><text x="150" y="162" font-size="60" fill="#4a8a1a" text-anchor="middle" opacity="0.35" font-family="serif">✿</text></svg>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__placeholder" style="background:linear-gradient(160deg,#0d0408,#2d1020)">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="300" height="300" fill="#090205"/><text x="150" y="162" font-size="60" fill="#8a1a4a" text-anchor="middle" opacity="0.35" font-family="serif">✦</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="gallery__footer">
+      <a href="https://www.instagram.com/latecheckout.hyd/" target="_blank" class="btn btn--outline">
+        See More on Instagram
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">What People Say</p>
+        <h2 class="section__title">Guest <em>Reviews</em></h2>
+      </div>
+      <div class="reviews__grid">
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Late Checkout events are in a class of their own. The Rooftop Rendezvous was honestly the best night I've had in Hyderabad. The curation, the people, the vibe — absolutely unmatched."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <strong>Priya M.</strong>
+              <span>Creative Director, Hyderabad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--featured">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"These guys know how to build an atmosphere. Every detail is thought through — from the music curation to the crowd they curate. I've attended three events and each one has been better than the last."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">R</div>
+            <div>
+              <strong>Rahul S.</strong>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"The Midnight Market was surreal. You don't expect a night market to feel this premium but Late Checkout pulled it off effortlessly. Already waiting for the next one."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">A</div>
+            <div>
+              <strong>Ananya K.</strong>
+              <span>Architect</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"After Hours Sessions had a lineup that rivalled international club nights. The sound quality, the lighting, the people — I felt like I was in Berlin, not Hyderabad. Brilliant."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">K</div>
+            <div>
+              <strong>Karthik V.</strong>
+              <span>Music Producer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"I was skeptical at first but Late Checkout delivered something truly special. The Garden Soirée felt like a fantasy — I still get people asking me about it months later."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">N</div>
+            <div>
+              <strong>Neha R.</strong>
+              <span>Photographer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"This is what Hyderabad's event scene needed. Late Checkout isn't just throwing parties — they're building culture. Count me in for everything they do next."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">S</div>
+            <div>
+              <strong>Siddharth P.</strong>
+              <span>Brand Strategist</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <p class="section__eyebrow">Get In Touch</p>
+          <h2 class="section__title">Let's Create<br/><em>Something Special</em></h2>
+          <p class="contact__sub">Whether you're looking to attend our next event, collaborate, or bring Late Checkout to your venue — we'd love to hear from you.</p>
+          <div class="contact__info">
+            <a href="https://www.instagram.com/latecheckout.hyd/" target="_blank" class="contact__item">
+              <div class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Instagram</span>
+                <span class="contact__value">@latecheckout.hyd</span>
+              </div>
+            </a>
+            <a href="mailto:hello@latecheckouthyd.com" class="contact__item">
+              <div class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Email</span>
+                <span class="contact__value">hello@latecheckouthyd.com</span>
+              </div>
+            </a>
+            <div class="contact__item">
+              <div class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Location</span>
+                <span class="contact__value">Hyderabad, Telangana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right">
+          <form class="contact__form" id="contactForm">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Rahul Singh" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">I'm interested in...</option>
+                <option>Attending an Event</option>
+                <option>Brand Collaboration</option>
+                <option>Venue Partnership</option>
+                <option>Media / Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you have in mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form__note">We usually respond within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg logo-svg--light">
+            <rect x="2" y="2" width="216" height="76" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <line x1="2" y1="20" x2="52" y2="20" stroke="currentColor" stroke-width="2.5"/>
+            <line x1="168" y1="20" x2="218" y2="20" stroke="currentColor" stroke-width="2.5"/>
+            <text x="110" y="34" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="currentColor" text-anchor="middle">Late</text>
+            <text x="110" y="62" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="currentColor" text-anchor="middle">Checkout</text>
+          </svg>
+          <p>Hyderabad's premier event marketing collective, crafting unforgettable nights since 2022.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Along</h4>
+          <a href="https://www.instagram.com/latecheckout.hyd/" target="_blank" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @latecheckout.hyd
+          </a>
+          <p class="footer__tagline">"The night is young.<br/>Check out late."</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Late Checkout Hyderabad. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
