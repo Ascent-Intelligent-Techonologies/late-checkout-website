@@ -822,6 +822,65 @@ ul { list-style: none; }
 }
 
 /* ===========================
+   REELS
+   =========================== */
+
+.reels {
+  background: var(--dark);
+}
+
+.reels__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.reel-card {
+  background: var(--dark-mid);
+  border: 1px solid rgba(107,15,26,0.2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.reel-card:hover {
+  border-color: rgba(107,15,26,0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(107,15,26,0.18);
+}
+
+.reel-card video {
+  width: 100%;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  display: block;
+  max-height: 520px;
+}
+
+.reel-card__label {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reel-card__label h4 {
+  font-family: var(--ff-serif);
+  font-size: 1.1rem;
+  color: var(--cream);
+}
+
+.reel-card__label p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .reels__grid { grid-template-columns: 1fr; }
+}
+
+/* ===========================
    REVIEWS
    =========================== */
 
