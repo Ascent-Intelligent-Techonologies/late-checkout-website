@@ -12,6 +12,7 @@ if (!overlay) {
   overlay = document.createElement('div');
   overlay.className = 'nav-overlay';
   overlay.innerHTML = `
+    <a href="#moodboard" onclick="closeNav()">moodboard</a>
     <a href="#about"   onclick="closeNav()">About</a>
     <a href="#events"  onclick="closeNav()">Events</a>
     <a href="#gallery" onclick="closeNav()">Gallery</a>
@@ -35,7 +36,7 @@ burger.addEventListener('click', () => {
 
 // === SCROLL REVEAL ===
 const revealEls = document.querySelectorAll(
-  '.event-card, .review-card, .gallery__item, .pillar, .contact__item, .about__text, .about__visual'
+  '.event-card, .review-card, .gallery__item, .pillar, .contact__item, .about__text, .about__visual, .mood-card, .tier-card, .press-card, .reel-card, .mstat'
 );
 
 revealEls.forEach((el, i) => {
@@ -71,7 +72,7 @@ if (form) {
     const email   = form.email.value;
     const subject = form.subject.value || 'Late Checkout Enquiry';
     const message = form.message.value;
-    const mailto  = `mailto:hello@latecheckouthyd.com?subject=${encodeURIComponent(subject + ' — ' + name)}&body=${encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+    const mailto  = `mailto:hello@latecheckoutclub.in?subject=${encodeURIComponent(subject + ' — ' + name)}&body=${encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
     window.location.href = mailto;
   });
 }
