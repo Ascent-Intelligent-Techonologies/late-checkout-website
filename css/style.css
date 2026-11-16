@@ -1004,12 +1004,37 @@ ul { list-style: none; }
 
 .footer__top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 56px;
+  grid-template-columns: 1.8fr 0.8fr 1.3fr 1fr;
+  gap: 44px;
   padding-bottom: 44px;
   border-bottom: 1px solid var(--line-light);
   margin-bottom: 30px;
 }
+
+.footer__founder h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(250,245,236,0.72);
+  margin-bottom: 18px;
+}
+.footer__founder-name {
+  font-family: var(--ff-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+.footer__founder-link {
+  display: block;
+  font-size: 13px;
+  color: rgba(250,245,236,0.85);
+  margin-bottom: 8px;
+  transition: color var(--transition);
+  word-break: break-all;
+}
+.footer__founder-link:hover { color: var(--gold); }
 
 .footer__brand .logo-svg--light { color: var(--gold); margin-bottom: 16px; }
 .footer__brand p { font-size: 13px; color: rgba(250,245,236,0.8); line-height: 1.7; max-width: 300px; }
