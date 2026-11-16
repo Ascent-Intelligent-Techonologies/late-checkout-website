@@ -1035,6 +1035,7 @@ ul { list-style: none; }
   word-break: break-all;
 }
 .footer__founder-link:hover { color: var(--gold); }
+.footer__founder-name--second { margin-top: 18px; }
 
 .footer__brand .logo-svg--light { color: var(--gold); margin-bottom: 16px; }
 .footer__brand p { font-size: 13px; color: rgba(250,245,236,0.8); line-height: 1.7; max-width: 300px; }
