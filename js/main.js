@@ -52,6 +52,11 @@ const observer = new IntersectionObserver(
 
 revealEls.forEach(el => observer.observe(el));
 
+// Safety net: never leave content hidden if the observer misbehaves
+setTimeout(() => {
+  revealEls.forEach(el => el.classList.add('visible'));
+}, 2500);
+
 // === SMOOTH ANCHOR SCROLL ===
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
